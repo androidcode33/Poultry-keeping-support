@@ -1,0 +1,3 @@
+INDEX VERSION 1.126+E:\CSC\X-Pro\Apps\.metadata\.plugins\org.eclipse.jdt.core
+642780844.index
+3800484129.index

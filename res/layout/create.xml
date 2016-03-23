@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back"
+    tools:context=".Start"
+    android:isScrollContainer="true"
+    >
+
+<RadioGroup 
+    android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:id="@+id/Poultrytype"
+	android:checkedButton="@+id/layers"
+	android:layout_below="@+id/t4"
+	android:layout_centerHorizontal="true"
+    >
+    <RadioButton
+        android:id="@+id/broilors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:text="@string/bro"
+        android:textSize="25sp"
+        />
+
+    <RadioButton
+        android:id="@+id/layers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lay"
+        android:textSize="25sp"
+         />
+		</RadioGroup>
+
+    <Button
+        android:id="@+id/Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/submit"
+        android:layout_alignBottom="@+id/submit"
+        android:layout_toLeftOf="@+id/Poultrytype"
+        android:text="@string/can" />
+
+    <RadioGroup
+        android:id="@+id/stageType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/aName"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/gStage"
+        android:checkedButton="@+id/days" >
+
+        <RadioButton
+            android:id="@+id/days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/days"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/weeks"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:text="@string/weeks"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/aName"
+        android:layout_below="@+id/Poultrytype"
+        android:text="@string/sub" 
+        />
+
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stageType"
+        android:layout_centerHorizontal="true"
+        android:text="@string/bre"
+        android:textSize="35sp" />
+
+    <EditText
+        android:id="@+id/gStage"
+        android:layout_width="120dip"
+        android:layout_height="30dip"
+        android:layout_alignBottom="@+id/tv2"
+        android:layout_alignLeft="@+id/Poultrytype"
+        android:background="@android:color/darker_gray"
+        android:ems="10"
+        android:hint="@string/blank"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/aName"
+        android:layout_alignTop="@+id/stageType"
+        android:text="@string/Stage"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="@string/ac_name"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/aName"
+        android:layout_width="290dip"
+        android:layout_height="30dip"
+        android:layout_below="@+id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/darker_gray"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:text="@string/title"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+ 
+</RelativeLayout>

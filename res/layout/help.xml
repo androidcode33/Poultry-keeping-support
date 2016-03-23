@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/help1" >
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <TextView
+              android:id="@+id/createAccounthelp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/createAccounthelp"
+              android:textIsSelectable="true" />
+
+          <EditText
+              android:id="@+id/editcreateAccounthelp"
+              android:layout_width="298dp"
+              android:layout_height="241dp"
+              android:background="@android:color/darker_gray"
+              android:inputType="text" />
+  
+           <TextView
+               android:id="@+id/openExistinghelp"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="@string/openExistinghelp"
+               android:textIsSelectable="true" />
+            <EditText
+              android:id="@+id/editopenExistinghelp"
+              android:layout_width="298dp"
+              android:layout_height="241dp"
+              android:background="@android:color/darker_gray"
+              android:inputType="text" />
+           <TextView 
+              android:id="@+id/RemoveAccounthelp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:textIsSelectable="true"
+              android:text="@string/RemoveAccounthelp"/> 
+              <EditText
+              android:id="@+id/editRemoveAccounthelp"
+              android:layout_width="298dp"
+              android:layout_height="241dp"
+              android:background="@android:color/darker_gray"
+              android:inputType="text" /> 
+            
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/help1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/helpmenu"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textIsSelectable="true"
+        android:textSize="40sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

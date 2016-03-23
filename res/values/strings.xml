@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Poultry App</string>
+    <string name="p">    Enter Unique Account Name</string>
+    <string name="ac_name">Flock ID</string>
+    <string name="Stage">Growth\nStage</string>
+    <string name="days">Days</string>
+    <string name="weeks">Weeks</string>
+    <string name="months">Months</string>
+    <string name="Date">Date of Purchase</string>
+    <string name="dd">dd</string>
+    <string name="mm">mm</string>
+    <string name="yy">yy</string>
+    <string name="sub">Submit</string>
+    <string name="can">Cancel</string>
+    <string name="bre">Select Breed</string>
+    <string name="lay">Layers</string>
+    <string name="bro">Broilers</string>
+    <string name="Accounts">Account Details</string>
+    <string name="blank">Still Blank</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">POULTRY KEEPING SUPPORT</string>
+    <string name="button1">Create Account</string>
+    <string name="button2">OpenExistingAccount</string>
+    <string name="button3">Remove Account</string>
+    <string name="loads">Loading....</string>
+    <string name="splash2">splashscreen</string>
+    <string name ="moreinfo">More Information</string>
+    <string name ="AboutAPP">About App</string>
+    <string name ="helpmenu">Help</string>
+    <string name ="createAccounthelp">CreateAccount</string>
+    <string name ="openExistinghelp">OpenExisting</string>
+    <string name ="RemoveAccounthelp">RemoveAccount</string>
+    <string name ="open">Enter Account Name</string>
+    <string name ="op">OPEN</string>
+    <string name ="sels">SELECT ACCOUNT</string>
+    <string name ="message">Rearing With You</string>
+
+    
+    
+
+</resources>

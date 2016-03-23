@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.poultryapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.poultryapp.splash_screen"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.poultryapp.MainActivity"
+            android:label="@string/app_name" />
+        
+        <activity
+            android:name="com.poultryapp.CreateAccount"
+            android:label="@string/app_name"/>
+     
+        
+        <activity
+            android:name="com.poultryapp.Help"
+            android:label="@string/app_name"/>
+           
+        
+        <activity
+            android:name="com.poultryapp.OpenQuery"
+            android:label="@string/app_name"/>
+        
+        <activity
+            android:name="com.poultryapp.QueryQueue"
+            android:label="@string/app_name"/>
+        
+        <activity
+            android:name="com.poultryapp.Accounts"
+            android:label="@string/app_name"/>
+        
+			<receiver android:name=".AlarmReceiver" >
+            <intent-filter>
+                <action android:name="com.manish.alarm.ACTION" />
+            </intent-filter>
+        </receiver>
+        
+    </application>
+
+</manifest>
